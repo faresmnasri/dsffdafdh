@@ -32,7 +32,7 @@ client.user.setGame(`FALLEGA TEAM|!FLG`,"http://twitch.tv/S-F")
 
 
 
-const ownerid = '373892191791087617'
+
 client.colors = {}
 
 //let rainbow = 0;
