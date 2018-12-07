@@ -35,7 +35,7 @@ client.user.setGame(`FALLEGA TEAM|!FLG`,"http://twitch.tv/S-F")
 
 client.colors = {}
 
-let rainbow = 20;
+//let rainbow = 20;
 
  client.on("ready", async () => {
     console.log(`Logged in as ${client.user.tag}!`);
