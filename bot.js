@@ -5,7 +5,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`FALLEGA TEAM|!FLG`,"http://twitch.tv/S-F")
+  client.user.setGame( `!FLG `,"http://twitch.tv/S-F")
     console.log('')
     console.log('')
     console.log('╔[═════════════════════════════════════════════════════════════════]╗')
