@@ -129,7 +129,7 @@ client.on('message', message => {
             const embed = new Discord.RichEmbed()
             .setAuthor("FLG", client.user.avatarURL)
             .setColor(0x4336F4)
-            .setDescription("IKTIB: **`*FLG (role name)`**")
+            .setDescription("IKTIB: **`!FLG (role name)`**")
             message.channel.send({embed});
             return;
         }
