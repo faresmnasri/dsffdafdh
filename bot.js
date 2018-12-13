@@ -1,7 +1,7 @@
 const prefix ="!";
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var id = "231101412258349056";
+const ownerid = '231101412258349056'
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
