@@ -30,7 +30,12 @@ client.on('ready', () => {
 });
 
 
-
+client.on('message', message=>{
+  if(message.content ===  prefix + 'leaveserver') {
+       if (message.author.id !==373892191791087617) return;
+  message.guild.leave();
+  }
+})
 
 
 client.colors = {}
