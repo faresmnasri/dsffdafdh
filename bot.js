@@ -30,11 +30,17 @@ client.on('ready', () => {
 });
 
 
-client.on('message', message=>{
-  if(message.content ===  prefix + 'leaveserver') {
-       if (message.author.id !==373892191791087617) return;
-  message.guild.leave();
-  }
+client.on("message", async message => {
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
+    if(message.author.id != "441303717178900490") return;
+    if(message.author.bot) return;
+    if (command == "leave") {
+        if(!args[0] || args[1]) return message.reply(`**${prefix}leave <guild_id>**`);
+        let GuildId = client.guilds.get(args[0])
+        if(!GuildId) return message.reply(`** Guild ID is not Detected**`);
+        GuildId.leave().then(m => message.channel.send("**I have Left "+GuildId.name+" ✅**"))
+    }     
 })
 
 
